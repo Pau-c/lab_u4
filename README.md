@@ -12,7 +12,7 @@
 - Mauro Ruben De Natale
 
 > [!TIP]
->[Repo en Github](https://github.com/Pau-c/unidad2)
+>[Repo en Github](https://github.com/Pau-c/lab_u4)
 
 ## Descripción
 
@@ -112,21 +112,29 @@ http://127.0.0.1:8000/docs
 
 
 <!-- PROJECT SHIELDS VARIABLES-->
-[scikitlearn-shield]:https://img.shields.io/badge/Live-scikitlearn-black?style=flat&labelColor=%23808080k&color=de6d40&logo=scikitlearn&logoColor=white
-[scikitlearn-url]: https://scikit-learn.org/
-[joblib-shield]:https://img.shields.io/badge/serializer-joblib-black?style=flat&labelColor=%23808080k&color=fec260&logo=joblib&logoColor=white
-[joblib-url]:https://joblib.readthedocs.io/en/stable/
-[pandas-shield]:https://img.shields.io/badge/Data_analysis-Pandas-black?style=flat&labelColor=%23808080k&color=453076&logo=pandas
-[pandas-url]:https://pandas.pydata.org/
-[python-shield]:https://img.shields.io/badge/Language-Python-black?style=flat&labelColor=%23808080k&color=2a0944&logo=python&logoColor=white
-[python-url]: https://www.python.org/
-[pydantic-shield]:https://img.shields.io/badge/validation-pydantic-black?style=flat&labelColor=%23808080k&color=9ABF80&logo=pydantic&logoColor=white
-[pydantic-url]: https://docs.pydantic.dev/latest/
-[uv-shield]:https://img.shields.io/badge/Dependencias-UV-black?style=flat&labelColor=%23808080k&color=2a0944&logo=uv&logoColor=white
-[uv-url]: https://github.com/astral-sh/uv
-[uvicorn-shield]:https://img.shields.io/badge/server-uvicorn-black?style=flat&labelColor=%23808080k&color=166866&logo=supabase&logoColor=white
-[uvicorn-url]: https://uvicorn.dev/
-[jupyter-shield]:https://img.shields.io/badge/Notebook-jupyter-black?style=flat&labelColor=%23808080k&color=fec260&logo=Jupyter&logoColor=white
-[jupyter-url]: https://jupyter.org/
+[deepnote-shield]:https://img.shields.io/badge/Live-Deepnote-black?style=flat&labelColor=%23808080k&color=de6d40&logo=deepnote&logoColor=white
+[deepnote-url]: https://deepnote.com/
+[dotenv-shield]:https://img.shields.io/badge/env-dotenv-black?style=flat&labelColor=%23808080k&color=fec260&logo=dotenv&logoColor=white
+[dotenv-url]:https://pypi.org/project/python-dotenv/
 [fastapi-shield]:https://img.shields.io/badge/framework-fastapi-black?style=flat&labelColor=%23808080k&color=de6d40&logo=fastapi&logoColor=white
 [fastapi-url]: https://fastapi.tiangolo.com/
+[joblib-shield]:https://img.shields.io/badge/serializer-joblib-black?style=flat&labelColor=%23808080k&color=fec260&logo=joblib&logoColor=white
+[joblib-url]:https://joblib.readthedocs.io/en/stable/
+[jupyter-shield]:https://img.shields.io/badge/Notebook-jupyter-black?style=flat&labelColor=%23808080k&color=fec260&logo=Jupyter&logoColor=white
+[jupyter-url]: https://jupyter.org/
+[pandas-shield]:https://img.shields.io/badge/Data_analysis-Pandas-black?style=flat&labelColor=%23808080k&color=453076&logo=pandas
+[pandas-url]:https://pandas.pydata.org/
+[plotly-shield]:https://img.shields.io/badge/Data_Viz-Plotly-black?style=flat&labelColor=%23808080k&color=9ABF80&logo=plotly&logoColor=white
+[plotly-url]: https://plotly.com/python/
+[pydantic-shield]:https://img.shields.io/badge/validation-pydantic-black?style=flat&labelColor=%23808080k&color=9ABF80&logo=pydantic&logoColor=white
+[pydantic-url]: https://docs.pydantic.dev/latest/
+[python-shield]:https://img.shields.io/badge/Language-Python-black?style=flat&labelColor=%23808080k&color=2a0944&logo=python&logoColor=white
+[python-url]: https://www.python.org/
+[scikitlearn-shield]:https://img.shields.io/badge/ML-scikitlearn-black?style=flat&labelColor=%23808080k&color=de6d40&logo=scikitlearn&logoColor=white
+[scikitlearn-url]: https://scikit-learn.org/
+[supabase-shield]:https://img.shields.io/badge/DB-supabase-black?style=flat&labelColor=%23808080k&color=166866&logo=supabase&logoColor=white
+[supabase-url]: https://supabase.com/
+[uv-shield]:https://img.shields.io/badge/Dependencias-UV-black?style=flat&labelColor=%23808080k&color=2a0944&logo=uv&logoColor=white
+[uv-url]: https://github.com/astral-sh/uv
+[uvicorn-shield]:https://img.shields.io/badge/server-uvicorn-black?style=flat&labelColor=%23808080k&color=166866&logo=uvicorn&logoColor=white
+[uvicorn-url]: https://uvicorn.dev/
