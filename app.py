@@ -1,10 +1,12 @@
 
+from observability_setup import setup_observability
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, ConfigDict, Field
 from typing import List, Dict
 import joblib, json, time
 from pathlib import Path
 import numpy as np
+
 
 APP_VERSION = "0.1.0"
 ARTIFACTS_DIR = Path("artifacts")
@@ -14,6 +16,7 @@ META_PATH = ARTIFACTS_DIR / "metadata.json"
 
 app = FastAPI(title="ML API", version=APP_VERSION)
 
+setup_observability(app)
 # Variables globales que se cargarán al inicio
 model = None
 columns = []
@@ -133,7 +136,7 @@ def predict_batch(samples: List[Sample]):
                 label_id=int(id_pred),
                 label_name=label_name,
                 score=round(score, 4),
-                latency_ms=0.0 # Se dejará en 0.0 para evitar complejidad en el batch
+                latency_ms=0.0 
             ))
 
         # Reemplaza latency_ms individual con el tiempo total del batch

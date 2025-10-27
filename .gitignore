@@ -8,6 +8,7 @@ wheels/
 outputs/
 logs/
 artifacts/
+api_logs/
 
 # Virtual environments
 .venv
