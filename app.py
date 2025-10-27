@@ -22,6 +22,7 @@ label_map = {0: "Setosa", 1: "Versicolor", 2: "Virginica"} #traduce la etiqueta 
 
 
 # TODO: Define tus modelos Pydantic aquí
+
 class Sample(BaseModel):
     model_config = ConfigDict(extra="forbid")
     # ---- COMPLETA CON TUS CAMPOS SEGÚN feature_columns.json ----
@@ -34,10 +35,11 @@ class Sample(BaseModel):
 
 class PredictionOut(BaseModel):
     # ---- COMPLETA: qué devuelves? label / score / probs / latencia ----
-    label_id: int = Field(..., description="ID de la especie predicha (0, 1, 2).")
-    label_name: str = Field(..., description="Nombre de la especie predicha (Setosa, Versicolor, Virginica).")
-    score: float = Field(..., ge=0.0, le=1.0, description="Probabilidad o confianza de la predicción.")
-    latency_ms: float = Field(..., gt=0, description="Tiempo de procesamiento de la predicción en milisegundos.")
+
+    label_id: int = Field(..., description="ID de la categoria predicha")
+    label_name: str = Field(..., description="Nombre de la categoria predicha.")
+    score: float = Field(..., ge=0.0, le=1.0, description="confianza de la predicción.")
+    latency_ms: float = Field(..., gr=0, description="Tiempo de procesamiento de la predicción en milisegundos.")
     pass
 
 @app.on_event("startup")
