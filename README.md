@@ -100,13 +100,14 @@ uv sync
 #### asegurarse estar en el etorno correcto y activado: De ser necesario correr en terminal: `.venv\Scripts\activate`
 ### En linux: `source.venv/bin/activate`
 
+## correr en 04_3_Taller_FastAPI.ipynb hasta la celda 4
 
-## correr archivo en terminal con:
+## Antes de correr la celda 5 con las pruebas, ejecutar el proyecto localmente en terminal con:
 ```
 uvicorn app:app --reload --port 8000
 ```
 
-## Abrir proyecto en browser:
+## Abrir proyecto en browser para ver los endpoints:
 ```
 http://127.0.0.1:8000/docs
 ```

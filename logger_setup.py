@@ -62,7 +62,7 @@ def check_input_ranges(sample):
         sample_dict = sample.model_dump()
         sample_id = str(hash(tuple(sample_dict.values())))
         logger.warning(
-            "Input con valores atípicos o cercanos al límite.",
+            "Input con valores atípicos",
             warnings=warnings_list,
             sample_id=sample_id,
         )

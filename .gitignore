@@ -9,6 +9,7 @@ outputs/
 logs/
 artifacts/
 api_logs/
+app.py
 
 # Virtual environments
 .venv
