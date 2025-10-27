@@ -17,14 +17,8 @@
 ## Descripción
 
 ## Instrucciones 
-### - Bajar dataset
->[Dataset original](https://www.kaggle.com/datasets/ludmin/billboard?resource=download)
 
-## PROCESO ETL 
-
-
-
-## 🛠️ Requisitos e Instalación
+### 🛠️ Requisitos e Instalación
 
 <!-- PROJECT SHIELDS -->
 [![scikitlearnBadge][scikitlearn-shield]][scikitlearn-url]
@@ -52,18 +46,18 @@ PASOS PARA USAR IDE con UV y COMENZAR DESARROLLO
 ```
 ### - Instalar uv en la pc si es necesario (linux)
 
-# Instalar curl si no lo tienes
+### Instalar curl si no lo tienes
 ```
 sudo apt update
 ```
 ```
 sudo apt install curl
 ```
-# Descargar e instalar uv
+### Descargar e instalar uv
 ```
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
-# Recargar el profile 
+### Recargar el profile 
 ```
 source ~/.bashrc  # Para Bash
 ```
@@ -97,17 +91,17 @@ uv sync
 > 3. Elegir el kernel que tenga el nombre del proyecto.
 
 
-#### asegurarse estar en el etorno correcto y activado: De ser necesario correr en terminal: `.venv\Scripts\activate`
-### En linux: `source.venv/bin/activate`
+#### Asegurarse estar en el etorno correcto y activado: De ser necesario correr en terminal: `.venv\Scripts\activate`
+#### En linux: `source.venv/bin/activate`
 
-## correr en 04_3_Taller_FastAPI.ipynb hasta la celda 4
+### - Correr en 04_3_Taller_FastAPI.ipynb hasta la celda 4
 
-## Antes de correr la celda 5 con las pruebas, ejecutar el proyecto localmente en terminal con:
+### - Antes de correr la celda 5 con las pruebas, ejecutar el proyecto localmente en terminal con:
 ```
 uvicorn app:app --reload --port 8000
 ```
 
-## Abrir proyecto en browser para ver los endpoints:
+### - Abrir proyecto en browser para ver los endpoints:
 ```
 http://127.0.0.1:8000/docs
 ```
