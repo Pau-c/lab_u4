@@ -31,11 +31,30 @@
 [![joblibBadge][joblib-shield]][joblib-url]
 [![fastapiBadge][fastapi-shield]][fastapi-url]
 [![loguruBadge][loguru-shield]][loguru-url]
+[![dockerBadge][docker-shield]][docker-url]
+[![datadogBadge][datadog-shield]][datadog-url]
+
 <!-- PROJECT SHIELDS -->
+***************************************************************************************************************
+PASOS PARA USAR CON DOCKER
+****************************************************************************************************************
+
+### - Instalar Docker desktop
+### - Tener el servicio de Docker corriendo
+### - En terminal:
+```
+docker compose up --build
+```
+
+### - Abrir proyecto en:
+```
+http://127.0.0.1:8000/docs
+```
+
 
 
 ***************************************************************************************************************
-PASOS PARA USAR IDE con UV y COMENZAR DESARROLLO
+PASOS PARA USAR en IDE SIN DOCKER con UV y COMENZAR DESARROLLO
 ****************************************************************************************************************
 
 ### - Instalar uv en la pc si es necesario (en terminal de Windows):
@@ -108,31 +127,35 @@ http://127.0.0.1:8000/docs
 
 
 <!-- PROJECT SHIELDS VARIABLES-->
+[datadog-shield]:https://img.shields.io/badge/Observability-Datadog-black?style=flat&labelColor=%23808080k&color=90D5FF&logo=datadog&logoColor=white
+[datadog-url]: https://www.datadoghq.com/
 [deepnote-shield]:https://img.shields.io/badge/Live-Deepnote-black?style=flat&labelColor=%23808080k&color=de6d40&logo=deepnote&logoColor=white
 [deepnote-url]: https://deepnote.com/
-[dotenv-shield]:https://img.shields.io/badge/Env-dotenv-black?style=flat&labelColor=%23808080k&color=fec260&logo=dotenv&logoColor=white
+[docker-shield]:https://img.shields.io/badge/Container-Docker-black?style=flat&labelColor=%23808080k&color=166866&logo=docker&logoColor=white
+[docker-url]: https://www.docker.com
+[dotenv-shield]:https://img.shields.io/badge/Env-Dotenv-black?style=flat&labelColor=%23808080k&color=fec260&logo=dotenv&logoColor=white
 [dotenv-url]:https://pypi.org/project/python-dotenv/
-[fastapi-shield]:https://img.shields.io/badge/Framework-fastapi-black?style=flat&labelColor=%23808080k&color=de6d40&logo=fastapi&logoColor=white
+[fastapi-shield]:https://img.shields.io/badge/Framework-Fastapi-black?style=flat&labelColor=%23808080k&color=de6d40&logo=fastapi&logoColor=white
 [fastapi-url]: https://fastapi.tiangolo.com/
-[joblib-shield]:https://img.shields.io/badge/Serializer-joblib-black?style=flat&labelColor=%23808080k&color=fec260&logo=joblib&logoColor=white
+[joblib-shield]:https://img.shields.io/badge/Serializer-Joblib-black?style=flat&labelColor=%23808080k&color=fec260&logo=joblib&logoColor=white
 [joblib-url]:https://joblib.readthedocs.io/en/stable/
-[jupyter-shield]:https://img.shields.io/badge/Notebook-jupyter-black?style=flat&labelColor=%23808080k&color=fec260&logo=Jupyter&logoColor=white
+[jupyter-shield]:https://img.shields.io/badge/Notebook-Jupyter-black?style=flat&labelColor=%23808080k&color=fec260&logo=Jupyter&logoColor=white
 [jupyter-url]: https://jupyter.org/
-[loguru-shield]:https://img.shields.io/badge/Logger-loguru-black?style=flat&labelColor=%23808080k&color=453076&logo=loguru
+[loguru-shield]:https://img.shields.io/badge/Logger-Loguru-black?style=flat&labelColor=%23808080k&color=453076&logo=loguru
 [loguru-url]:https://pandas.pydata.org/
 [pandas-shield]:https://img.shields.io/badge/Data_analysis-Pandas-black?style=flat&labelColor=%23808080k&color=453076&logo=pandas
 [pandas-url]:https://pandas.pydata.org/
 [plotly-shield]:https://img.shields.io/badge/Data_Viz-Plotly-black?style=flat&labelColor=%23808080k&color=9ABF80&logo=plotly&logoColor=white
 [plotly-url]: https://plotly.com/python/
-[pydantic-shield]:https://img.shields.io/badge/Validation-pydantic-black?style=flat&labelColor=%23808080k&color=9ABF80&logo=pydantic&logoColor=white
+[pydantic-shield]:https://img.shields.io/badge/Validation-Pydantic-black?style=flat&labelColor=%23808080k&color=9ABF80&logo=pydantic&logoColor=white
 [pydantic-url]: https://docs.pydantic.dev/latest/
 [python-shield]:https://img.shields.io/badge/Language-Python-black?style=flat&labelColor=%23808080k&color=2a0944&logo=python&logoColor=white
 [python-url]: https://www.python.org/
-[scikitlearn-shield]:https://img.shields.io/badge/ML-scikitlearn-black?style=flat&labelColor=%23808080k&color=de6d40&logo=scikitlearn&logoColor=white
+[scikitlearn-shield]:https://img.shields.io/badge/ML-Scikitlearn-black?style=flat&labelColor=%23808080k&color=de6d40&logo=scikitlearn&logoColor=white
 [scikitlearn-url]: https://scikit-learn.org/
-[supabase-shield]:https://img.shields.io/badge/DB-supabase-black?style=flat&labelColor=%23808080k&color=166866&logo=supabase&logoColor=white
+[supabase-shield]:https://img.shields.io/badge/DB-Supabase-black?style=flat&labelColor=%23808080k&color=166866&logo=supabase&logoColor=white
 [supabase-url]: https://supabase.com/
 [uv-shield]:https://img.shields.io/badge/Dependencies-UV-black?style=flat&labelColor=%23808080k&color=2a0944&logo=uv&logoColor=white
 [uv-url]: https://github.com/astral-sh/uv
-[uvicorn-shield]:https://img.shields.io/badge/Server-uvicorn-black?style=flat&labelColor=%23808080k&color=166866&logo=uvicorn&logoColor=white
+[uvicorn-shield]:https://img.shields.io/badge/Server-Uvicorn-black?style=flat&labelColor=%23808080k&color=166866&logo=uvicorn&logoColor=white
 [uvicorn-url]: https://uvicorn.dev/
