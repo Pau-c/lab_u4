@@ -92,7 +92,7 @@ uv sync
 
 
 #### Asegurarse estar en el etorno correcto y activado: De ser necesario correr en terminal: `.venv\Scripts\activate`
-#### En linux: `source.venv/bin/activate`
+#### En linux: `source .venv/bin/activate`
 
 ### - Correr en 04_3_Taller_FastAPI.ipynb hasta la celda 4
 
