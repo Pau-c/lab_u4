@@ -186,6 +186,18 @@ http://127.0.0.1:8000/docs
 ### Docker:
 ![docker](https://github.com/user-attachments/assets/d56bf4bb-1e80-43f8-9fed-25c413e75923)
 
+### API:
+![api](https://github.com/user-attachments/assets/07d76a71-d7d1-4c34-b002-7d246eb70ccb)
+
+### HEALTH:
+![health](https://github.com/user-attachments/assets/3d03dc6c-97a5-4325-ad45-fe4e2219d147)
+
+### PREDICT BATCH:
+![predictbatch](https://github.com/user-attachments/assets/9052449a-e983-4d73-ab0c-fc70fd977e94)
+
+### POST PREDICT:
+![post predict](https://github.com/user-attachments/assets/57ad1179-db5e-49e3-8190-042fb32838b7)
+
 ### Test Output:
 ![test_output_hasta3](https://github.com/user-attachments/assets/cde7325e-8e02-442d-976c-8a5ef46b8443)
 
