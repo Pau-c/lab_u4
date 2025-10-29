@@ -68,20 +68,13 @@ def check_input_ranges(sample):
         )
 
 
-# --- Función de Setup que aplica la lógica ---
+# --- lógica del logger ---
 
 
 def setup_observability(app: FastAPI):
-    # Aplica el middleware de logging y latencia a la instancia de FastAPI app
     app.middleware("http")(loguru_middleware)
 
-    # elimina la salida a la consola estándar y lo guarda en archivo log
-    logger.remove()  # Opcional
-
-    # Configuración del sink para guardar en un archivo local:
-    # rotation="10 MB": Rotar el archivo de log cuando llega a 10 MB
-    # compression="zip": Comprimir los archivos de log antiguos
-    # serialize=True: Guarda el log en  JSON
+    logger.remove()
     logger.add(
         "api_logs/api_logs_{time:YYYY-MM-DD}.json",
         rotation="1 week",
@@ -91,6 +84,13 @@ def setup_observability(app: FastAPI):
         serialize=True,
     )
 
-    logger.info(
-        "Logs guardados en api_logs/"
-    )
+    logger.info("Logs guardados en api_logs/")
+
+    # 🔹 Registrar eventos de inicio y cierre
+    @app.on_event("startup")
+    async def startup_event():
+        logger.info("Aplicación FastAPI iniciada correctamente.")
+
+    @app.on_event("shutdown")
+    async def shutdown_event():
+        logger.info("Aplicación FastAPI cerrándose...")
