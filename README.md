@@ -164,7 +164,7 @@ http://127.0.0.1:8000/docs
 [uvicorn-url]: https://uvicorn.dev/
 
 ---
-## 📘 Bitácora de decisiones
+## 📘 Bitácora de Decisiones
 
 **Dataset y objetivo:** se utilizó el dataset *Iris* de `sklearn.datasets` para clasificar la especie de una flor (*Setosa*, *Versicolor* o *Virginica*) a partir de las medidas de sépalos y pétalos (problema de clasificación multiclase).
 
