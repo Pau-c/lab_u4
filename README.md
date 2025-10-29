@@ -206,6 +206,8 @@ http://127.0.0.1:8000/docs
 
 **Target:** 3 clases (0, 1, 2).
 
+**Analisis de Métricas Descriptivas:** Las medidas del sépalo (largo y ancho) siguen una distribución simétrica (media $\approx$ mediana). En cambio, las medidas del pétalo son la clave: sus medias y medianas son muy diferentes, revelando una distribución bimodal.Esto indica que los datos se agrupan naturalmente en dos grupos separados (flores de pétalo corto vs. flores de pétalo largo), facilitando la clasificación.
+
 
 ### Datadog:
 ![datadog](https://github.com/user-attachments/assets/e15b746e-c96a-4d20-97d5-208f3910a402)
