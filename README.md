@@ -162,3 +162,20 @@ http://127.0.0.1:8000/docs
 [uv-url]: https://github.com/astral-sh/uv
 [uvicorn-shield]:https://img.shields.io/badge/Server-Uvicorn-black?style=flat&labelColor=%23808080k&color=166866&logo=uvicorn&logoColor=white
 [uvicorn-url]: https://uvicorn.dev/
+
+---
+## 📘 Bitácora de decisiones
+
+**Dataset y objetivo:** se utilizó el dataset *Iris* de `sklearn.datasets` para clasificar la especie de una flor (*Setosa*, *Versicolor* o *Virginica*) a partir de las medidas de sépalos y pétalos (problema de clasificación multiclase).
+
+**Selección de features/target:** se emplearon las cuatro variables numéricas `sepal_length_cm`, `sepal_width_cm`, `petal_length_cm` y `petal_width_cm` como entrada, y la columna `target` como salida.
+
+**Modelo y preprocesamiento:** se entrenó un **K-Nearest Neighbors (KNN)** con 5 vecinos (`KNeighborsClassifier`) dentro de un `Pipeline` junto a un `StandardScaler` para escalar los datos. El conjunto se dividió en 80 % entrenamiento y 20 % prueba con estratificación. El modelo y las columnas se guardaron con `joblib` para su reutilización.
+
+**Métrica principal y resultados:** se utilizó **accuracy** como métrica principal, obteniendo una precisión de alrededor del **95 %** en el conjunto de prueba.
+
+**Decisiones de contrato:** la API expone los endpoints `/health`, `/predict` y `/predict-batch`. Se definieron esquemas **Pydantic** que validan tipos y rangos de las features, y las respuestas se devuelven en formato **JSON** con campos como `label_id`, `label_name`, `score` y `latency_ms`, además de un manejo adecuado de errores HTTP.
+
+**Observabilidad y pruebas:** se implementó **logging con Loguru** y se realizaron pruebas desde el notebook utilizando `requests`, abarcando casos válidos e inválidos (faltan campos, tipo incorrecto, campo extra) y midiendo **latencia**. El entorno es completamente reproducible mediante **Docker** y `uv`.
+
+**Lecciones aprendidas:** el uso de **FastAPI** y **Pydantic** simplifica la validación y documentación de la API; el **Pipeline** de scikit-learn con **KNN** garantiza reproducibilidad, y las pruebas junto con el **logging** fortalecen la confiabilidad del servicio desplegado.
