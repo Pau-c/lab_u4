@@ -180,7 +180,7 @@ http://127.0.0.1:8000/docs
 
 **Lecciones aprendidas:** el uso de **FastAPI** y **Pydantic** simplifica la validación y documentación de la API; el **Pipeline** de scikit-learn con **KNN** garantiza reproducibilidad, y las pruebas junto con el **logging** fortalecen la confiabilidad del servicio desplegado.
 
-### Datalog:
+### Datagog:
 ![datadog](https://github.com/user-attachments/assets/e15b746e-c96a-4d20-97d5-208f3910a402)
 
 ### Docker:
