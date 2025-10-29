@@ -44,12 +44,20 @@ PASOS PARA USAR CON DOCKER
 
 ### - Instalar Docker desktop
 ### - Tener el servicio de Docker corriendo
-### - En terminal:
+### - Clonar repo:
+```
+git clone https://github.com/Pau-c/lab_u4.git
+```
+### - Abrir el proyecto en ide/ ir a carpeta de proyecto en terminal:
 ```
 docker compose up --build
 ```
+### - Para volver a correr el proyecto dentro del contenedor si no hubo cambios:
+```
+docker compose up 
+```
 
-### - Abrir proyecto en:
+### - Abrir proyecto en un browser:
 ```
 http://127.0.0.1:8000/docs
 ```
