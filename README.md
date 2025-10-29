@@ -172,13 +172,30 @@ http://127.0.0.1:8000/docs
 
 **Modelo y preprocesamiento:** se entrenó un **K-Nearest Neighbors (KNN)** con 5 vecinos (`KNeighborsClassifier`) dentro de un `Pipeline` junto a un `StandardScaler` para escalar los datos. El conjunto se dividió en 80 % entrenamiento y 20 % prueba con estratificación. El modelo y las columnas se guardaron con `joblib` para su reutilización.
 
-**Métrica principal y resultados:** se utilizó **accuracy** como métrica principal, obteniendo una precisión de alrededor del **95 %** en el conjunto de prueba.
+**Métrica principal y resultados:** se utilizó **accuracy** como métrica principal, obteniendo una precisión de alrededor del **93 %** en el conjunto de prueba.
 
 **Decisiones de contrato:** la API expone los endpoints `/health`, `/predict` y `/predict-batch`. Se definieron esquemas **Pydantic** que validan tipos y rangos de las features, y las respuestas se devuelven en formato **JSON** con campos como `label_id`, `label_name`, `score` y `latency_ms`, además de un manejo adecuado de errores HTTP.
 
 **Observabilidad y pruebas:** se implementó **logging con Loguru** y se realizaron pruebas desde el notebook utilizando `requests`, abarcando casos válidos e inválidos (faltan campos, tipo incorrecto, campo extra) y midiendo **latencia**. El entorno es completamente reproducible mediante **Docker** y `uv`.
 
 **Lecciones aprendidas:** el uso de **FastAPI** y **Pydantic** simplifica la validación y documentación de la API; el **Pipeline** de scikit-learn con **KNN** garantiza reproducibilidad, y las pruebas junto con el **logging** fortalecen la confiabilidad del servicio desplegado.
+
+**1. Análisis del Dataset **
+Basado en la salida de la celda de "Carga y exploración":
+Dataset Utilizado: sklearn.datasets.load_iris.
+Cantidad de Registros: 150 (según el count en df.describe()).
+Cantidad de Columnas: 5 (4 features y 1 target).
+Valores Nulos: 0. La salida de df.isnull().sum() muestra 0 para todas las columnas.
+Valores Duplicados: El notebook no incluye un paso específico para verificar registros duplicados (ej. df.duplicated().sum()).
+
+**Métricas Descriptivas (Estadísticas):**
+
+sepal length (cm): Media 5.84; Min 4.3; Max 7.9
+sepal width (cm): Media 3.05; Min 2.0; Max 4.4
+petal length (cm): Media 3.75; Min 1.0; Max 6.9
+petal width (cm): Media 1.19; Min 0.1; Max 2.5
+      Target: 3 clases (0, 1, 2).
+
 
 ### Datadog:
 ![datadog](https://github.com/user-attachments/assets/e15b746e-c96a-4d20-97d5-208f3910a402)
