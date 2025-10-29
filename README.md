@@ -179,3 +179,21 @@ http://127.0.0.1:8000/docs
 **Observabilidad y pruebas:** se implementó **logging con Loguru** y se realizaron pruebas desde el notebook utilizando `requests`, abarcando casos válidos e inválidos (faltan campos, tipo incorrecto, campo extra) y midiendo **latencia**. El entorno es completamente reproducible mediante **Docker** y `uv`.
 
 **Lecciones aprendidas:** el uso de **FastAPI** y **Pydantic** simplifica la validación y documentación de la API; el **Pipeline** de scikit-learn con **KNN** garantiza reproducibilidad, y las pruebas junto con el **logging** fortalecen la confiabilidad del servicio desplegado.
+
+### Datalog:
+![datadog](https://github.com/user-attachments/assets/e15b746e-c96a-4d20-97d5-208f3910a402)
+
+### Docker:
+![docker](https://github.com/user-attachments/assets/d56bf4bb-1e80-43f8-9fed-25c413e75923)
+
+### Test Output:
+![test_output_hasta3](https://github.com/user-attachments/assets/cde7325e-8e02-442d-976c-8a5ef46b8443)
+
+![test_output_4](https://github.com/user-attachments/assets/3e427350-d1fb-473f-a3e6-fead9fb2b59b)
+
+![test_output_5](https://github.com/user-attachments/assets/96d14ed7-0052-439f-8d34-7af130cd663c)
+
+![test_output_6](https://github.com/user-attachments/assets/dee8d76f-c013-4465-8766-13177955e055)
+
+![test_output_7y8](https://github.com/user-attachments/assets/92c35fae-6809-4ff7-8c27-4ce6df81c16a)
+
