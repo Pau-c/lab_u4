@@ -180,7 +180,8 @@ http://127.0.0.1:8000/docs
 
 **Lecciones aprendidas:** el uso de **FastAPI** y **Pydantic** simplifica la validación y documentación de la API; el **Pipeline** de scikit-learn con **KNN** garantiza reproducibilidad, y las pruebas junto con el **logging** fortalecen la confiabilidad del servicio desplegado.
 
-**1. Análisis del Dataset **
+**Análisis del Dataset**
+
 Basado en la salida de la celda de "Carga y exploración":
 Dataset Utilizado: sklearn.datasets.load_iris.
 Cantidad de Registros: 150 (según el count en df.describe()).
