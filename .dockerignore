@@ -32,3 +32,11 @@
 **/values.dev.yaml
 LICENSE
 README.md
+*.pyc
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+build/
+dist/
+wheels/

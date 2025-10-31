@@ -1,6 +1,7 @@
+#Le dice a Datadog como leer y parsear logs JSON para que no los trate como texto plano
 logs:
   - type: file
-    path: /app/logs/logs.json
+    path: /app/api_logs/*.json #indica al agente dónde leer los .json
     service: observability_api
     source: python
     log_processing_rules:

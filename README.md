@@ -24,31 +24,37 @@
 ### 🛠️ Requisitos e Instalación
 
 <!-- PROJECT SHIELDS -->
-[![scikitlearnBadge][scikitlearn-shield]][scikitlearn-url]
-[![pythonBadge][python-shield]][python-url]
-[![pandasBadge][pandas-shield]][pandas-url]
-[![pydanticBadge][pydantic-shield]][pydantic-url]
-[![uvBadge][uv-shield]][uv-url]
-[![uvicornBadge][uvicorn-shield]][uvicorn-url]
+[![datadogBadge][datadog-shield]][datadog-url]
+[![dockerBadge][docker-shield]][docker-url]
+[![fastapiBadge][fastapi-shield]][fastapi-url]
 [![jupyterBadge][jupyter-shield]][jupyter-url]
 [![joblibBadge][joblib-shield]][joblib-url]
-[![fastapiBadge][fastapi-shield]][fastapi-url]
 [![loguruBadge][loguru-shield]][loguru-url]
-[![dockerBadge][docker-shield]][docker-url]
-[![datadogBadge][datadog-shield]][datadog-url]
+[![pandasBadge][pandas-shield]][pandas-url]
+[![pydanticBadge][pydantic-shield]][pydantic-url]
+[![pythonBadge][python-shield]][python-url]
+[![scikitlearnBadge][scikitlearn-shield]][scikitlearn-url]
+[![uvBadge][uv-shield]][uv-url]
+[![uvicornBadge][uvicorn-shield]][uvicorn-url]
 
 <!-- PROJECT SHIELDS -->
 *****************************************************************************************************************
 PASOS PARA USAR CON DOCKER
 ****************************************************************************************************************
 
-### - Instalar Docker desktop
+### - Instalar `Docker` desktop
+### - Hacer una cuenta en `Datadog` -> install agents-> Docker -> elegir region.
+### - Copiar `Api key` y dirección(ej: us3.datadoghq.com)  
 ### - Tener el servicio de Docker corriendo
 ### - Clonar repo:
 ```
 git clone https://github.com/Pau-c/lab_u4.git
 ```
-### - Abrir el proyecto en ide/ ir a carpeta de proyecto en terminal:
+### - Abrir el proyecto en ide
+### - Crear un archivo en la raíz del proyecto llamado `.env`
+### - Dentro pegar la api key de Datadog que se copio antes siguiendo este formato (sin espacios ni comillas): `DD_API_KEY=`
+### - En archivo `compose.yaml` pegar la direccion copiada en `DD_SITE=` (sin espacios ni comillas)
+### -  Ir a carpeta de proyecto en terminal:
 ```
 docker compose up --build
 ```
@@ -138,31 +144,31 @@ http://127.0.0.1:8000/docs
 
 
 <!-- PROJECT SHIELDS VARIABLES-->
-[datadog-shield]:https://img.shields.io/badge/Observability-Datadog-black?style=flat&labelColor=%23808080k&color=90D5FF&logo=datadog&logoColor=white
+[datadog-shield]:https://img.shields.io/badge/Observability-Datadog-black?style=flat&labelColor=%23808080k&color=81493b&logo=datadog&logoColor=white
 [datadog-url]: https://www.datadoghq.com/
-[deepnote-shield]:https://img.shields.io/badge/Live-Deepnote-black?style=flat&labelColor=%23808080k&color=de6d40&logo=deepnote&logoColor=white
+[deepnote-shield]:https://img.shields.io/badge/Live-Deepnote-black?style=flat&labelColor=%23808080k&color=d65e40&logo=deepnote&logoColor=white
 [deepnote-url]: https://deepnote.com/
-[docker-shield]:https://img.shields.io/badge/Container-Docker-black?style=flat&labelColor=%23808080k&color=166866&logo=docker&logoColor=white
+[docker-shield]:https://img.shields.io/badge/Container-Docker-black?style=flat&labelColor=%23808080k&color=f7b387&logo=docker&logoColor=white
 [docker-url]: https://www.docker.com
-[dotenv-shield]:https://img.shields.io/badge/Env-Dotenv-black?style=flat&labelColor=%23808080k&color=fec260&logo=dotenv&logoColor=white
+[dotenv-shield]:https://img.shields.io/badge/Env-Dotenv-black?style=flat&labelColor=%23808080k&color=f3edb9&logo=dotenv&logoColor=white
 [dotenv-url]:https://pypi.org/project/python-dotenv/
-[fastapi-shield]:https://img.shields.io/badge/Framework-Fastapi-black?style=flat&labelColor=%23808080k&color=de6d40&logo=fastapi&logoColor=white
+[fastapi-shield]:https://img.shields.io/badge/Framework-Fastapi-black?style=flat&labelColor=%23808080k&color=b0c69a&logo=fastapi&logoColor=white
 [fastapi-url]: https://fastapi.tiangolo.com/
-[joblib-shield]:https://img.shields.io/badge/Serializer-Joblib-black?style=flat&labelColor=%23808080k&color=fec260&logo=joblib&logoColor=white
+[joblib-shield]:https://img.shields.io/badge/Serializer-Joblib-black?style=flat&labelColor=%23808080k&color=70b29c&logo=joblib&logoColor=white
 [joblib-url]:https://joblib.readthedocs.io/en/stable/
-[jupyter-shield]:https://img.shields.io/badge/Notebook-Jupyter-black?style=flat&labelColor=%23808080k&color=fec260&logo=Jupyter&logoColor=white
+[jupyter-shield]:https://img.shields.io/badge/Notebook-Jupyter-black?style=flat&labelColor=%23808080k&color=2a9ca0&logo=Jupyter&logoColor=white
 [jupyter-url]: https://jupyter.org/
-[loguru-shield]:https://img.shields.io/badge/Logger-Loguru-black?style=flat&labelColor=%23808080k&color=453076&logo=loguru
+[loguru-shield]:https://img.shields.io/badge/Logger-Loguru-black?style=flat&labelColor=%23808080k&color=2a6478&logo=loguru
 [loguru-url]:https://pandas.pydata.org/
-[pandas-shield]:https://img.shields.io/badge/Data_analysis-Pandas-black?style=flat&labelColor=%23808080k&color=453076&logo=pandas
+[pandas-shield]:https://img.shields.io/badge/Data_analysis-Pandas-black?style=flat&labelColor=%23808080k&color=4c4e77&logo=pandas
 [pandas-url]:https://pandas.pydata.org/
-[plotly-shield]:https://img.shields.io/badge/Data_Viz-Plotly-black?style=flat&labelColor=%23808080k&color=9ABF80&logo=plotly&logoColor=white
+[plotly-shield]:https://img.shields.io/badge/Data_Viz-Plotly-black?style=flat&labelColor=%23808080k&color=133337&logo=plotly&logoColor=white
 [plotly-url]: https://plotly.com/python/
-[pydantic-shield]:https://img.shields.io/badge/Validation-Pydantic-black?style=flat&labelColor=%23808080k&color=9ABF80&logo=pydantic&logoColor=white
+[pydantic-shield]:https://img.shields.io/badge/Validation-Pydantic-black?style=flat&labelColor=%23808080k&color=81493b&logo=pydantic&logoColor=white
 [pydantic-url]: https://docs.pydantic.dev/latest/
-[python-shield]:https://img.shields.io/badge/Language-Python-black?style=flat&labelColor=%23808080k&color=2a0944&logo=python&logoColor=white
+[python-shield]:https://img.shields.io/badge/Language-Python-black?style=flat&labelColor=%23808080k&color=d65e40&logo=python&logoColor=white
 [python-url]: https://www.python.org/
-[scikitlearn-shield]:https://img.shields.io/badge/ML-Scikitlearn-black?style=flat&labelColor=%23808080k&color=de6d40&logo=scikitlearn&logoColor=white
+[scikitlearn-shield]:https://img.shields.io/badge/ML-Scikitlearn-black?style=flat&labelColor=%23808080k&color=f7b387&logo=scikitlearn&logoColor=white
 [scikitlearn-url]: https://scikit-learn.org/
 [supabase-shield]:https://img.shields.io/badge/DB-Supabase-black?style=flat&labelColor=%23808080k&color=166866&logo=supabase&logoColor=white
 [supabase-url]: https://supabase.com/
@@ -178,15 +184,15 @@ http://127.0.0.1:8000/docs
 
 **Selección de features/target:** se emplearon las cuatro variables numéricas `sepal_length_cm`, `sepal_width_cm`, `petal_length_cm` y `petal_width_cm` como entrada, y la columna `target` como salida.
 
-**Modelo y preprocesamiento:** se entrenó un **K-Nearest Neighbors (KNN)** con 5 vecinos (`KNeighborsClassifier`) dentro de un `Pipeline` junto a un `StandardScaler` para escalar los datos. El conjunto se dividió en 80 % entrenamiento y 20 % prueba con estratificación. El modelo y las columnas se guardaron con `joblib` para su reutilización.
+**Modelo y preprocesamiento:** Dado que el dataset de Iris no tiene datos faltantes, las características son numéricas y están en una escala similar, las necesidades de preprocesamiento son mínimas.Se entrenó un **K-Nearest Neighbors (KNN)** con 5 vecinos (`KNeighborsClassifier`) dentro de un `Pipeline` junto a un `StandardScaler` para escalar los datos.Este asume una distribución normal y centra los datos alrededor dedesviacion de 0 a 1, lo cual es crucial para modelos basados en distancia como KNN. El conjunto se dividió en 80 % entrenamiento y 20 % prueba con **estratificación**.  El modelo y las columnas se guardaron con `joblib` para su reutilización.
 
-**Métrica principal y resultados:** se utilizó **accuracy** como métrica principal, obteniendo una precisión de alrededor del **93 %** en el conjunto de prueba.
+**Métrica principal y resultados:** se utilizó **accuracy** como métrica principal, obteniendo una precisión de alrededor del **93 %** en el conjunto de prueba. Dado que el modelo KNN depende fuertemente de la elección de hiperparámetros (especialmente el número de vecinos), en futuras iteraciones se podría aplicar **GridSearchCV** u otras técnicas de búsqueda de hiperparámetros para evaluar si es posible mejorar el desempeño del modelo.
 
-**Decisiones de contrato:** la API expone los endpoints `/health`, `/predict` y `/predict-batch`. Se definieron esquemas **Pydantic** que validan tipos y rangos de las features, y las respuestas se devuelven en formato **JSON** con campos como `label_id`, `label_name`, `score` y `latency_ms`, además de un manejo adecuado de errores HTTP.
+**Decisiones de contrato:** la API expone los endpoints dados `/health`, `/predict` y `/predict-batch`. Se definieron esquemas **Pydantic** que validan tipos y rangos de las features, y las respuestas se devuelven en formato **JSON** con campos como `label_id`, `label_name`, `score` y `latency_ms`, además del manejo  de errores HTTP.
 
 **Observabilidad y pruebas:** se implementó **logging con Loguru** y se realizaron pruebas desde el notebook utilizando `requests`, abarcando casos válidos e inválidos (faltan campos, tipo incorrecto, campo extra) y midiendo **latencia**. El entorno es completamente reproducible mediante **Docker** y `uv`.
 
-**Lecciones aprendidas:** el uso de **FastAPI** y **Pydantic** simplifica la validación y documentación de la API; el **Pipeline** de scikit-learn con **KNN** garantiza reproducibilidad, y las pruebas junto con el **logging** fortalecen la confiabilidad del servicio desplegado.
+**Lecciones aprendidas:** el uso de **FastAPI** y **Pydantic** simplifica la validación y documentación de la API; el **Pipeline** de scikit-learn con **KNN** garantiza reproducibilidad, y las pruebas junto con el **logging** en **Datadog** son escenciales al monitoreo en tiempo real y fortalecen la confiabilidad del servicio.
 
 **Análisis del Dataset**
 

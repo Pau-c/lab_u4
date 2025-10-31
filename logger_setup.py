@@ -33,13 +33,8 @@ async def loguru_middleware(request: Request, call_next):
 
 # --- manejo de warnings de input  ---
 
-
 def check_input_ranges(sample):
-
-    # chequea si los valores de entrada están fuera del rango o cerca del límite
-
     warnings_list = []
-
     RANGES = {
         "sepal_length_cm": (3.0, 8.5),
         "petal_length_cm": (0.5, 7.5),
@@ -47,25 +42,13 @@ def check_input_ranges(sample):
 
     for field, (min_val, max_val) in RANGES.items():
         value = getattr(sample, field)
-
-        if value > max_val * 0.9 and value <= max_val:
+        if value > max_val * 0.9:
             warnings_list.append(
                 f"ADVERTENCIA: '{field}' ({value:.2f}) se acerca al límite superior ({max_val:.2f})."
             )
 
-        if value < min_val or value > max_val:
-            warnings_list.append(
-                f"CRÍTICO: '{field}' ({value:.2f}) está fuera del rango de entrenamiento ({min_val:.2f}-{max_val:.2f})."
-            )
-
     if warnings_list:
-        sample_dict = sample.model_dump()
-        sample_id = str(hash(tuple(sample_dict.values())))
-        logger.warning(
-            "Input con valores atípicos",
-            warnings=warnings_list,
-            sample_id=sample_id,
-        )
+        logger.warning("Input con valores atípicos", warnings=warnings_list)
 
 
 # --- lógica del logger ---

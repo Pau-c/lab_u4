@@ -1,5 +1,3 @@
-version: "3.9"
-
 services:
   observability_api:
     build: .
@@ -10,6 +8,8 @@ services:
       - DD_SERVICE=observability_api
       - DD_ENV=dev
       - DD_LOGS_INJECTION=true
+    volumes:
+      - ./api_logs:/app/api_logs
     depends_on:
       - datadog
     restart: unless-stopped
@@ -20,7 +20,6 @@ services:
     env_file:
       - .env
     environment:
-      - DD_API_KEY=0dc5f62b8d559342b6c9f9d431b2fd75
       - DD_SITE=us3.datadoghq.com
       - DD_LOGS_ENABLED=true
       - DD_LOGS_CONFIG_CONTAINER_COLLECT_ALL=true
